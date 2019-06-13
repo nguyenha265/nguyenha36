@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="chuyendoi"
+oninput="ham(this.value)"
+onchange="ham(this.value)"/>
+<p>Celcius : <span id="hienthi"></span></p>
+<script>
+    function ham(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("hienthi").innerText = (valNum-32) / 1.8;
+    }
+</script>
+</body>
+</html>
